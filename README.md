@@ -1,4 +1,4 @@
-# Cit281-p1 
+#Cit281-p1 
 
 Purpose of this project: 
 - To gain experience with operating system command line interface 
@@ -18,8 +18,8 @@ console.log(days_of_Week)
 
 
 - Output to the console a string of random length between 5-25 characters in length, that consists of all random lowercase letter from the english alphabet. 
-```
 // Returns a random number between min (inclusive) and max (exclusive)
+```
 function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
