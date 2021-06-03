@@ -1,4 +1,4 @@
-#Cit281-p1 
+# CIT281 Project-1
 
 Purpose of this project: 
 - To gain experience with operating system command line interface 
