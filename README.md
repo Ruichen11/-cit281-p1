@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Cit281-p1 
 
-You can use the [editor on GitHub](https://github.com/Ruichen11/-cit281-p1/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Purpose of this project: 
+- To gain experience with operating system command line interface 
+- Gain experience working with VSCode
+- Gain experience writing and exxecuting non-web server Node.js JavaScript code 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Project Code:
+- Output to the console the day of the week of the current day. The day of the week must be the full name for the day.
+```
+function days_of_Week() {
+    var d = new Date();
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return(days[d.getDay()]);
+}
+console.log(days_of_Week)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+- Output to the console a string of random length between 5-25 characters in length, that consists of all random lowercase letter from the english alphabet. 
+```
+// Returns a random number between min (inclusive) and max (exclusive)
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ruichen11/-cit281-p1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
-### Support or Contact
+let result = "";
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+let lengthOfOutputString = getRandomInteger(5, 26);
+
+for (let i = 0; i < lengthOfOutputString; i++) {
+    result += alphabet[getRandomInteger(0,alphabet.length)];
+}
+
+console.log(result);
+```
+
+
+### What I learned from this project:
+- Learned how to use the CLI of my operating system to create folders 
+- Created and executed JS files using Node.js and VSCode terminal
