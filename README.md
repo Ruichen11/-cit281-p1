@@ -16,12 +16,10 @@ function days_of_Week() {
 console.log(days_of_Week)
 ```
 
-
 - Output to the console a string of random length between 5-25 characters in length, that consists of all random lowercase letter from the english alphabet. 
 - Returns a random number between min (inclusive) and max (exclusive)
-
-
-``` function getRandomInteger(min, max) {
+``` 
+function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
